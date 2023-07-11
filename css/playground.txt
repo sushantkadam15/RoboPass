@@ -1,0 +1,78 @@
+
+
+
+
+html, body{
+    background-color: #312d6d;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Readex Pro', sans-serif;
+    color: white;
+}
+
+.container{
+    margin: 0 5%;
+    min-width: fit-content;
+    margin: 15px 0px;
+}
+
+.hero{
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    width: 100%;
+}
+
+header img{
+    height: 50px;
+}
+header h1{
+    margin: 0;
+}
+
+.brand h1 span{
+    color: #35d2e1;
+}
+
+.brand{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tagline{
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+
+.password-generator-main{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.password-generator-app{
+    height: 500px;
+    width: 400px;
+    border-radius: 36px;
+    background-color: #f1fbfb;
+} 
+

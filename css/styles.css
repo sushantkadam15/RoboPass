@@ -1,84 +1,110 @@
-
-/* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@700&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
-
-/* Remove browser default styling */
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+/* Test Area */
+div{
+  /* border: solid white 1px; */
 }
 
-html, body{
-    background-color: #312d6d;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+/* Google fonts import */
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@700&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap");
+
+html, body {
+  background-color: #312d6d;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
 }
 
 body{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 h1, h2, h3, h4{
-    font-family: 'Readex Pro', sans-serif;
-    color: white;
+  font-family: 'Readex Pro', sans-serif;
+  color: white;
 }
 
 .container{
-    margin: 0 5%;
-    min-width: fit-content;
-    margin: 15px 0px;
+  width: 90%;
+  max-width: 1200px;
 }
 
-.hero{
-    height: 100vh;
+.header-app-container{
+height: 100vh;
 }
 
 header{
-    display: flex;
-    width: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-top: 5px;
 }
 
 header img{
-    height: 50px;
-}
-header h1{
-    margin: 0;
+  height: 50px;
 }
 
-.brand h1 span{
-    color: #35d2e1;
+.branding{
+ display: flex;
+ flex-direction: column;
+ margin-left: 5px;
+
 }
 
-.brand{
-    margin-left: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.branding h1{
+  margin-bottom: 1px;
 }
 
-.tagline{
-    font-size: 10px;
-    letter-spacing: 2px;
-    margin: 0;
+.branding p{
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin: 0;
 }
 
-
-.password-generator-main{
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.branding h1 span{
+  color: #35d2e1;
 }
 
+.app-container{
+  height: 80%;
+  display: flex;
+  align-items: center;
+}
 
+.greeting h2{
+  color: #35d2e1;
+  font-size: 2.5em;
+}
 
-.password-generator-app{
-    height: 500px;
-    width: 400px;
-    border-radius: 36px;
-    background-color: #f1fbfb;
+.greeting p{
+  width: 90%;
+  min-width: 200px;
+  line-height: 1.6em;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+}
+
+.app{
+  height: 350px;
+  min-width: 380px;
+  background-color: #f1fbfd;
+  margin-left: 10px;
+  border-radius:36px;
+}
+.app-content{
+  padding: 30px;
+}
+
+#message{
+  color: #312d6d;
+  font-size: 1.2em;
+}
+
+#generated-password{
+  height: 100px;
+  border: #443299 solid 0.5px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 2em;
+  text-align: center;
 }
