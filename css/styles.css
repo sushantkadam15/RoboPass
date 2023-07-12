@@ -1,7 +1,5 @@
 /* Test Area */
-div{
-  /* border: solid white 1px; */
-}
+
 
 /* Google fonts import */
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@700&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap");
@@ -25,11 +23,15 @@ h1, h2, h3, h4{
 
 .container{
   width: 90%;
+  min-width: 820px;
   max-width: 1200px;
+  min-height: 100vh;
 }
 
+/* Main Password Generator app Section */
+
 .header-app-container{
-height: 100vh;
+height: 700px;
 }
 
 header{
@@ -40,7 +42,7 @@ header{
 }
 
 header img{
-  height: 50px;
+  height: 80px;
 }
 
 .branding{
@@ -52,6 +54,7 @@ header img{
 
 .branding h1{
   margin-bottom: 1px;
+  font-size: 3em;
 }
 
 .branding p{
@@ -80,7 +83,7 @@ header img{
   min-width: 200px;
   line-height: 1.6em;
   letter-spacing: 1px;
-  font-size: 1.1em;
+  font-size: 1.5em;
 }
 
 .app{
@@ -91,20 +94,118 @@ header img{
   border-radius:36px;
 }
 .app-content{
+  height: 80%;
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #message{
   color: #312d6d;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
-#generated-password{
-  height: 100px;
+#password-container{
+  height: 130px;
   border: #443299 solid 0.5px;
   border-radius: 10px;
   background-color: #ffffff;
   color: #000000;
   font-size: 2em;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+#copy-icon{
+  position: relative;
+  bottom: 40%;
+  left: 60%;
+  font-size: 2em;
+  color: #312d6d;
+}
+
+#copy-icon:hover{
+  color: #55aaee;
+}
+
+
+.app-buttons{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.app-buttons button{
+  width: 45%;
+  border-radius: 5px;
+  background-color: #55aaee;
+  color: #f1fbfd;
+  border: none;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+/* About Section */
+
+.about-container{
+  font-size: 1.2em;
+  line-height: 1.7em;
+}
+
+.about-container h2{
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+
+.about{
+ display: flex;
+}
+
+.about ul{
+  margin-bottom: 20px;
+}
+
+.about ul li{
+  margin: 5px 0
+}
+
+.about ul li span{
+  color: #35d2e1;
+}
+
+.about img{
+  height: 300px;
+  align-self: b;
+  margin-left: 80px;
+}
+
+/* Footer */
+footer{
+  height: 80px;
+  background-color: #312d6d;
+  margin-top: 100px;
+  border-top:1px solid #35d2e1 ;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+}
+
+footer ul{
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+footer ul li{
+  display: inline-block;
+}
+
+
+
+
+/* UI Changes at 820 */
