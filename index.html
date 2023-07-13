@@ -1,114 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RoboPass: A secure password generator web app.</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RoboPass: A secure password generator web app.</title>
 
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <section class="header-app-container">
-        <header>
-          <img
-            src="./assets/img/Logo.png"
-            alt="RoboPass Logo"
-            id="logo-image"
-          />
-          <div class="branding">
-            <h1>Robo<span>Pass</span></h1>
-            <p class="tagline">Generate Strong and Secure Passwords</p>
-          </div>
-        </header>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <section class="header-app-container">
+      <!-- Header section -->
+      <header>
+        <img
+          src="./assets/img/Logo.png"
+          alt="RoboPass Logo"
+          id="logo-image"
+        />
+        <div class="branding">
+          <h1>Robo<span>Pass</span></h1>
+          <p class="tagline">Generate Strong and Secure Passwords</p>
+        </div>
+      </header>
 
-        <div class="app-container">
-          <div class="greeting">
-            <h2>Beep boop! Welcome, human friend!</h2>
-            <p>
-              I, RoboPass, am here to save the day with my incredible
-              password-generating skills. Protecting your online accounts is my
-              top priority, and I've made it super easy and fun!
-            </p>
-          </div>
-          <div class="app">
-            <div class="app-content">
-              <p id="message">Here's a password I made just for you!</p>
-              <div id="password-container">
-                <div id="copy-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-clipboard-fill"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"
-                    />
-                  </svg>
-                </div>
-                <div id="password">password</div>
+      <div class="app-container">
+        <div class="greeting">
+          <!-- Greeting section -->
+          <h2>Beep boop! Welcome, human friend!</h2>
+          <p>
+            I, RoboPass, am here to save the day with my incredible
+            password-generating skills. Protecting your online accounts is my
+            top priority, and I've made it super easy and fun!
+          </p>
+        </div>
+        <div class="app">
+          <div class="app-content">
+            <!-- Password generation section -->
+            <p id="message">Message</p>
+            <div id="password-container">
+              <div id="copy-icon">
+                <!-- Copy icon -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-clipboard-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"
+                  />
+                </svg>
               </div>
-              <div class="app-buttons">
-                <button>Another Simple Password</button>
-                <button>Another Strong Password</button>
-              </div>
+              <div id="password">password</div>
+            </div>
+            <div class="app-buttons">
+              <!-- Password generation buttons -->
+              <button id="simple-password" class="btn">Another Simple Password</button>
+              <button id="strong-password" class="btn">Another Strong Password</button>
             </div>
           </div>
         </div>
-      </section>
-      <section class="about-container">
-        <h2>Why choose RoboPass?</h2>
-        <div class="about">
-          <div>
-            <ul>
-              <li>
-                <span>Robust and Secure:</span> I create passwords as tough as
-                titanium so that hackers won't stand a chance!
-              </li>
-              <li>
-                <span>Customizable Options:</span> Want a password that's just
-                right for you? I've got you covered. You can tweak the settings
-                to your heart's content.
-              </li>
-              <li>
-                <span>Quick and Convenient:</span> Time is precious, so I'll
-                generate a rock-solid password for you in a blink of an eye.
-              </li>
-              <li>
-                <span>User-Friendly Interface: </span>No tech wizardry required!
-                I'm designed with simplicity in mind, making it a breeze for you
-                to use me.
-              </li>
-            </ul>
-            <p>
-              Ready to dive into the world of secure passwords? Trust me,
-              RoboPass, your loyal password-generating robot, and stay safe
-              online! Beep boop!
-            </p>
-          </div>
-          <div>
-            <img
-              src="./assets/img/robopass-about.png"
-              alt="RoboPass looking through magnifying glass."
-            />
-          </div>
+      </div>
+    </section>
+    <section class="about-container">
+      <!-- About section -->
+      <h2>Why choose RoboPass?</h2>
+      <div class="about">
+        <div>
+          <ul>
+            <li>
+              <span>Robust and Secure:</span> I create passwords as tough as
+              titanium so that hackers won't stand a chance!
+            </li>
+            <li>
+              <span>Customizable Options:</span> Want a password that's just
+              right for you? I've got you covered. You can tweak the settings
+              to your heart's content.
+            </li>
+            <li>
+              <span>Quick and Convenient:</span> Time is precious, so I'll
+              generate a rock-solid password for you in a blink of an eye.
+            </li>
+            <li>
+              <span>User-Friendly Interface: </span>No tech wizardry required!
+              I'm designed with simplicity in mind, making it a breeze for you
+              to use me.
+            </li>
+          </ul>
+          <p>
+            Ready to dive into the world of secure passwords? Trust me,
+            RoboPass, your loyal password-generating robot, and stay safe
+            online! Beep boop!
+          </p>
         </div>
-      </section>
+        <div>
+          <img
+            src="./assets/img/robopass-about.png"
+            alt="RoboPass looking through magnifying glass."
+          />
+        </div>
+      </div>
+    </section>
 
-      <footer>
-        <ul>
-          <li>LinkedIn</li>
-          <li>Created By Sushant</li>
-          <li>GitHub</li>
-        </ul>
-      </footer>
-    </div>
+    <footer>
+      <!-- Footer section -->
+      <ul>
+        <li> <a href="https://www.linkedin.com/in/sushant-p-kadam/">LinkedIn</a></li>
+        <li>Created By Sushant</li>
+        <li><a href="https://github.com/sushantkadam15">GitHub</a></li>
+      </ul>
+    </footer>
+  </div>
 
-    <script src="./js/script.js"></script>
-  </body>
+  <script src="./js/script.js"></script>
+</body>
 </html>
